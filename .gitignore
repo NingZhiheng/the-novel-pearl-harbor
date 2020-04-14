@@ -274,3 +274,10 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+# markdown package
+_markdown*
+*.markdown.lua
+
+# output
+/*.pdf

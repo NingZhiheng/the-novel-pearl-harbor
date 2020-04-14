@@ -1,0 +1,17 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{hyperref}
+\usepackage{markdown}
+\markdownSetup{
+  inlineFootnotes = true,
+  renderers = {
+    link = {\href{#2}{#1}},
+  }
+}
+
+\title{谍影风云·珍珠港事件}
+\author{杨葭七}
+\date{\today}
+\begin{document}
+\maketitle
+\markdownInput{chapter00.md}
+\end{document}
