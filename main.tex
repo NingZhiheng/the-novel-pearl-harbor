@@ -1,8 +1,15 @@
-\documentclass[UTF8]{ctexart}
+\documentclass[UTF8, size = -4]{ctexart}
+\newif\ifafpaper
+\afpapertrue
 \usepackage{hyperref}
 \usepackage{geometry}
-\geometry{a4paper, scale = 0.62}
-% \geometry{a6paper, scale = 0.75}
+\ifafpaper
+  \geometry{a4paper, scale = 0.62}
+  \setlength{\parskip}{1ex}
+\else
+  \geometry{a6paper, scale = 0.75}
+  \setlength{\parskip}{.5ex}
+\fi
 \usepackage{markdown}
 \markdownSetup{
   inlineFootnotes = true,
