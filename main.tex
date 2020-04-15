@@ -1,5 +1,7 @@
 \documentclass[UTF8]{ctexart}
 \usepackage{hyperref}
+\usepackage{geometry}
+\geometry{a6paper, scale = 0.75}
 \usepackage{markdown}
 \markdownSetup{
   inlineFootnotes = true,
@@ -9,11 +11,17 @@
   hybrid = true
 }
 
+\newcommand\nonumsection{\setcounter{secnumdepth}{-2}}
+\newcommand\numsection{\setcounter{secnumdepth}{3}}
+
 \title{谍影风云·珍珠港事件\thanks{项目地址：\url{https://github.com/NingZhiheng/the-novel-pearl-harbor}}}
 \author{杨葭七}
 \date{\today}
 
 \begin{document}
 \maketitle
+\nonumsection
 \markdownInput{chapter00.md}
+\numsection
+\markdownInput{chapter01.md}
 \end{document}
