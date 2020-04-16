@@ -2,122 +2,25 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+## 介绍
 
-[Link to another page](./another-page.html).
+时间是 2020 年 04 月 14 日，[《谍影风云》](https://book.qidian.com/info/1011489683)这本书在起点刚刚结束连载。因为作者[寻青藤](https://my.qidian.com/author/401879751)的身体原因，《谍影风云》最终草草完结。不得不说，对于读者来说，这是颇为遗憾的事情。原作本人也提到，在 1941 年至 1946 年期间，中国谍报战线上，还发生了很多故事。但都因为原作自身的原因，未能成文见稿。
 
-There should be whitespace between paragraphs.
+作为《谍影风云》一路走来的阿卡林读者，葭七冲动之下，决定开坑写写这些故事。因本身对珍珠港事件颇感兴趣，也有事先了解事件发生前后的谍报状况，所以打算先从珍珠港事件写起。
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+因葭七本身长于 LaTeX，所以本书将会以 LaTeX 输出 PDF 文稿。同时，考虑到读者可能会有阅读纯文本的需求，故而主体文本会以 Markdown 撰写。在构想中，最终会用不同 LaTeX 文档类，输出多个版本（但内容相同）的 PDF，适用在不同设备上阅读。当然，这是后话了。
 
-# Header 1
+虽十分希望能够不辱原作威名，但是，一则葭七笔力有限，恐无法复现原作精彩之万一；二则俗务缠身，无法全力投入写作，所以自觉也有净身入宫的风险。但无论如何，葭七对原作的喜爱和读者对狗尾续貂之作的关注，想必都会支持葭七终究填上此坑。熟悉 GitHub 的读者，可登录本书 GitHub 项目页，追踪本书最新进度。
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+以上。
 
-## Header 2
+葭七，
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+2020-04-14
 
-### Header 3
+## 发布
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+最新版本：
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+* 适用于在电脑等大屏设备上阅读的 [`main.a4paper.pdf`](/uploads/main.a4paper.pdf) ；
+* 适用于在手机等小屏设备上阅读的 [`main.a6paper.pdf`](/uploads/main.a6paper.pdf)。
