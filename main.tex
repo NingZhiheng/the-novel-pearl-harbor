@@ -2,6 +2,7 @@
 \newif\ifafpaper
 \afpapertrue
 \usepackage{hyperref}
+\usepackage{graphicx}
 \usepackage{geometry}
 \ifafpaper
   \geometry{a4paper, scale = 0.62}
@@ -15,6 +16,13 @@
   inlineFootnotes = true,
   renderers = {
     link = {\href{#2}{#1}},
+    image = {\begin{figure}[htb]
+      \centering
+      \includegraphics[width = .9\linewidth]{#3}
+      \ifx\empty#4\empty\else
+        \caption{#4}\label{fig:#1}%
+      \fi
+    \end{figure}},
   },
   hybrid = true
 }
