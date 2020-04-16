@@ -2,9 +2,12 @@
 
 set -x
 
-while ! (git add . && git commit -m "[sync] source synchronized: $(date '+%Y-%m-%d %H:%M:%S')"); do 
-  echo "try again in 30s."; 
-  sleep 30
+while (true); do
+  while ! (git add . && git commit -m "[sync] source synchronized: $(date '+%Y-%m-%d %H:%M:%S')"); do 
+    echo "try again in ${1:-30}."; 
+    sleep ${1:-30}
+  done
+  while ! (git push); do echo "try again"; done
+  sleep ${1:-30}
 done
-while ! (git push); do echo "try again"; done
 
