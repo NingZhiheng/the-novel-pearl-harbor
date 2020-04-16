@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -x
+
+while ! (git add .); do echo "try again"; done
+while ! (git commit -m "[sync] source synchronized: $(date '+%Y-%m-%d %H:%M:%S')"); do echo "try again"; done
+while ! (git push); do echo "try again"; done
+
