@@ -2,12 +2,14 @@
 
 set -x
 
+DEFAULT_INTERVAL=60
+
 while (true); do
   while ! (git add . && git commit -m "[sync] source synchronized: $(date '+%Y-%m-%d %H:%M:%S')"); do 
-    echo "try again in ${1:-30}."; 
-    sleep ${1:-30}
+    echo "try again in ${1:-${DEFAULT_INTERVAL}}."; 
+    sleep ${1:-${DEFAULT_INTERVAL}}
   done
   while ! (git push); do echo "try again"; done
-  sleep ${1:-30}
+  sleep ${1:-${DEFAULT_INTERVAL}}
 done
 
