@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Example content"
+title: 引
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
