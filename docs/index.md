@@ -8,7 +8,7 @@
 layout: home
 ---
 
-{% include_relative about-internal.md %}
+{% include_relative _posts/00_about.md %}
 
 ------
 
