@@ -1,5 +1,30 @@
 title: 《谍影风云·珍珠港事件》
 description: 《谍影风云·珍珠港事件》系《谍影风云》之同人续作，主要内容是「关东军特种演习和珍珠港事件两大事件」，并且将日共情报员高杉仁希这条线串在两大事件当中写完，同时针对宁志恒脱甲这条线继续写一些内容。
 show_downloads: false
+
+baseurl: "/the-novel-pearl-harbor" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
+url: "https://ningzhiheng.github.io" # change this to the base hostname & protocol for your site
+
+
 google_analytics:
-theme: jekyll-theme-cayman
+
+# cayman-blog date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+cayman-blog:
+  date_format: "%b %-d, %Y"
+
+theme: # leave it empty
+
+# social
+author: Jiaqi Yang
+image: /thumbnail-jumbo.png
+twitter:
+  username:
+
+plugins:
+  - jekyll-target-blank
+
+target-blank:
+    rel: nofollow
+
+header_page_refs: ['about']

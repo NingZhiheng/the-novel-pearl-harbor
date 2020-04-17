@@ -1,11 +1,6 @@
 ---
-#
-# Here you can change the text shown in the Home page before the Latest Posts section.
-#
-# Edit cayman-blog's home layout in _layouts instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-#
-layout: home
+layout: default
+title: 《谍影风云·珍珠港事件》
 ---
 
 时间是 2020 年 04 月 14 日，[《谍影风云》](https://book.qidian.com/info/1011489683)这本书在起点刚刚结束连载。因为作者[寻青藤](https://my.qidian.com/author/401879751)的身体原因，《谍影风云》最终草草完结。不得不说，对于读者来说，这是颇为遗憾的事情。原作本人也提到，在 1941 年至 1946 年期间，中国谍报战线上，还发生了很多故事。但都因为原作自身的原因，未能成文见稿。于是这大约成了作者和读者共同的遗憾。
@@ -30,3 +25,8 @@ layout: home
 * 适用于在手机等小屏设备上阅读的 [`main.a6paper.pdf`](/uploads/main.a6paper.pdf)。
 
 ------
+
+在线阅读（构建中）：
+
+* [引](./chapter00)
+* [伪满军演（更新中）](./chapter01)
