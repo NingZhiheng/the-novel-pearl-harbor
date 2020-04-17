@@ -20,7 +20,7 @@ layout: home
 {% endif %}
 
 <div class="posts">
-  {% for post in paginator.posts %}
+  {% for post in site.posts %}
     <div class="post">
       <h3>
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
