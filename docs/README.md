@@ -1,224 +1,139 @@
-# The Cayman Blog theme
+LOFFER是个可以帮助你get off from LOFTER的软件（我知道这个pun很烂）。
 
-[![Build Status](https://travis-ci.org/lorepirri/cayman-blog.svg?branch=master)](https://travis-ci.org/lorepirri/cayman-blog) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-cayman-blog.svg)](https://badge.fury.io/rb/jekyll-theme-cayman-blog)
+这是一个可以通过Fork直接发布在GitHub的Jekyll博客，你不需要编写代码或使用命令行即可获得一个部署在GitHub的博客。
 
-*Cayman Blog is a Jekyll theme for GitHub Pages. It is based on the nice [Cayman theme](https://pages-themes.github.io/cayman/), with blogging features added. You can [preview the theme to see what it looks like](http://lorepirri.github.io/cayman-blog), or even [use it today](#usage).*
+当你看到不认识的术语，请忽略它，我知道程序员不说人话，我都不是程序员但是我已经开始意识到这是因为我们不知道这些概念用人话怎么说。
 
-<img src="https://raw.githubusercontent.com/lorepirri/cayman-blog/master/thumbnail.png" alt="Thumbnail of cayman-blog" style="max-width:30%; border: 1px solid grey;"/> <img src="https://raw.githubusercontent.com/lorepirri/cayman-blog/master/thumbnail-mobile.gif" alt="Thumbnail of cayman-blog for mobile" style="max-width:30%;"/>
+以下我会尽量用人话解说如何使用这个……LOFFER。
 
-## Install
+## 注意
 
-Cayman Blog Theme has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub Pages — just with a more involved installation process according to whether you’re _running Jekyll v3.3+ and self-hosting_, or if you’re *hosting with GitHub Pages*.
+LOFFER是一个**博客模板**，使用GitHub Pages发布个人博客是没有任何问题的。 **但是:**
 
-## Self hosting
+- **请勿发布成人向内容** 
+- **不要将大量图片上传到GitHub**
 
-If you’re running Jekyll v3.3+ and **self-hosting** you can quickly install the theme as Ruby gem:
+如有疑问，请阅读[GitHub Pages官方说明](https://pages.github.com/)。
 
-1. Add this line to your Jekyll site’s Gemfile:
-
-    ```
-    gem "jekyll-theme-cayman-blog"
-    ```
-
-2. Add this line to your Jekyll site’s _config.yml file:
-
-    ```
-    theme: jekyll-theme-cayman-blog
-    ```
-
-3. Then run Bundler to install the theme gem and dependencies:
-
-    ```
-    script/bootstrap
-    ```
-
-## Hosting with GitHub Pages
-
-If you’re *hosting your blog with GitHub Pages* you’ll have to consider this:
-
-:warning: As stated in the official [Jekyll documentation](https://jekyllrb.com/docs/themes/#installing-a-theme):
-
-> If you’re publishing your Jekyll site on [GitHub Pages](https://pages.github.com/), note that GitHub Pages supports only some gem-based themes. See [Supported Themes](https://pages.github.com/themes/) in GitHub’s documentation to see which themes are supported.
-
-Therefore, this theme, as well as many others, can not be installed in the same way as the ones officially supported by GitHub Pages (e.g. Cayman, Minima), a bit more effort has to be put on.
-
-The easiest way I found to install _Cayman Blog Theme_, is [installing the theme gem](gem-install), and then [converting the gem-based theme to regular theme](https://jekyllrb.com/docs/themes/#converting-gem-based-themes-to-regular-themes).
-
-Alternatively, for new projects, one could fork the whole theme, and keep only the interesting files.
+另外，同人作品更好的发布平台是[AO3](https://archiveofourown.org/)，你想你发在AO3还有tag还有kudos还有人看，是吧？
 
 
-### Gem Install
+## 如何使用
 
-This method is preferred for existing _Jekyll blogs_, as well as newly created ones. Notice that the files `index.md`, `about.md`, `contact.md` will be overwritten (only `index.md` is really needed, the other two are just placeholders).
+首先，这个博客主题适应手机阅读，但是，要使用它建立你自己的博客，你需要上电脑操作。
 
-1. Install the theme gem: ` $ gem install jekyll-theme-cayman-blog`
-3. Run `$ gem env gemdir` to know where the gem was installed
-4. Open the folder shown in the output
-5. Open the folder `gems`
-5. Open the theme folder (e.g. `jekyll-theme-cayman-blog-0.0.5`)
-6. Copy all the files into your newly created or existing blog folder    
-7. Leave empty `theme` your site's `_config.yml`:
+### 第一步 Fork到你的GitHub
 
-    ```yml
-    theme:
-    ```
-6. Modify `_config.yml`, `about.md`, `contact.md` for your project
-7. [Customize the theme](customizing)
+请点击[GitHub](https://github.com/)，注册一个GitHub账户。我们可以理解Git就是个文件版本管理系统，本身并不需要会代码即可使用。
 
-### Install as a Fork
+现在你看到的LOFFER，是作为一个GitHub上的Repository（代码库）存在的，你可以把这个代码库复制到你自己的GitHub账户中，这个操作叫做Fork。
 
-1. [Fork the repo](https://github.com/lorepirri/cayman-blog)
-2. Clone down the repo with `$ git clone git@github.com:username/reponame.git`
-3. Delete the `screenshot.png` and `screenshot-mobile.png` files
-3. Empty the `_posts` folder
-4. Install bundler and gems with `$ script/bootstrap`
-5. Run Jekyll with `$ bundle exec jekyll serve`
-6. Modify `_config.yml`, `about.md`, `contact.md`, and `now.md` for your project
-7. [Customize the theme](customizing)
+点击[LOFFER](https://github.com/FromEndWorld/LOFFER)，进入LOFFER的GitHub Repository页面，然后点Fork：
 
-## Customizing
+![gif](https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/fork.gif)
 
-### Configuration variables
+然后你立刻就可以看到LOFFER再次出现，这次它已经属于你了，这里我建议你重命名它，点击settings，给你的博客起个名字（请尽量使用字母而非中文）。
 
-Cayman Blog will respect the following variables, if set in your site's `_config.yml`:
+![img](https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/rename.png)
 
-```yml
-title: [The title of your site]
-description: [A short description of your site's purpose]
-```
+然后，向下拉页面，你会看到“GitHub Pages”，这是GitHub内置的网站host服务，选择master，如图所示：
 
-Additionally, you may choose to set the following optional variables:
+![img](https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/pages.png)
 
-```yml
-show_downloads: ["true" or "false" to indicate whether to provide a download URL]
-google_analytics: [Your Google Analytics tracking ID]
-```
+在几秒钟后，刷新此页面，你通常会看到这个绿色的东西（如果没看到，多等一会），你的网站已经发布成功，点击这个链接，即可查看：
 
-### RSS feeds
+![img](https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/published.png)
 
-To enable RSS feeds and also make visible an RSS feeds button in the footer, the [Jekyll Feed plugin](https://github.com/jekyll/jekyll-feed) must be installed.
+你可能会看到网站长得很丑，请继续下一步.
 
-Add this line to your site's Gemfile:
+### 第二步 设置站点信息
 
-```ruby
-gem 'jekyll-feed'
-```
+在你的博客的GitHub代码库页面里，选择Code，文件列表里选择_config.yml，点击打开，点击右上角笔形图标修改文档。
 
-And then add this line to your site's `_config.yml`:
+修改完成后，点击“Commit changes”。每次修改过代码库并且commit后，GitHub Pages都会自动重新发布网站，只要等上几分钟，再次刷新你的博客页面，就会看到你的修改了。
 
-```yml
-plugins:
-  - jekyll-feed
-```
+还有一点，**LOFFER使用的是MIT协议，大意就是全部开源随意使用，如果你要保留自己博文的权利，请编辑LICENSE文件，写上类似“_posts中的文档作者保留权利”这样的内容。**
 
-:warning: If you are using Jekyll < 3.5.0 use the `gems` key instead of `plugins`.
+### 第三步 发布博文
 
-For more information about configuring this plugin, see the official [Jekyll Feed plugin](https://github.com/jekyll/jekyll-feed) page.
+在你的博客的GitHub代码库页面里，点开_posts文件夹，这里面就是你的博客文章。
 
-### SEO tags
+这些文章使用的格式是Markdown，文件后缀名是md，这是一种非常简单易用的有格式文本标记语言，你应该已经注意到，在LOFFER自带的示例性博文中有一篇中文的Markdown语法介绍。
 
-Cayman Blog includes simple SEO tags from [jekyll-social-metatags](https://github.com/lorepirri/jekyll-social-metatags). Have a look at the page for its usage.
+更简单的办法是使用[Typora](https://typora.io/)，这是一个全图形化界面，全实时预览的Markdown写作软件，非常轻量，而且免费。
 
-The usage is compatible with the plugin [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag), which provides a battle-tested template of crowdsourced best-practices.
+![img](https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/Typora.png)
 
-To switch to a better SEO tags however, one should install [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag):
+在发布博文前，你需要在文章的头部添加这样的内容，包括你的文章标题，发布日期，作者名，和tag等。
 
-1. Add this line to your site's Gemfile:
-
-    ```ruby
-    gem 'jekyll-seo-tag'
-    ```
-
-2. And then add this line to your site's `_config.yml`:
-
-    ```yml
-    plugins:
-      - jekyll-seo-tag
-    ```
-
-3. Replace with the following, the `<!-- jekyll-seo-tag -->` comment in your site's `default.html`:
-
-      ```liquid
-      {% seo %}
-      ```
-
-For more information about configuring this plugin, see the official [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag) page.
-
-
-### Stylesheet
-
-If you'd like to add your own custom styles:
-
-1. Create a file called `/assets/css/style.scss` in your site
-2. Add the following content to the top of the file, exactly as shown:
-    ```scss
     ---
-    ---
+    layout: post
+    title: LOFFER文档
+    date: 2019-06-02
+    Author: 来自中世界
+    categories: 
+    tags: [sample, document]
+    comments: true
+    --- 
 
-    @import "{{ site.theme }}";
-    ```
-3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
+完成后，保存为.md文件，文件名是date-标题，例如 2019-06-02-document.md (注意这里的标题会成为这个post的URL，所以推荐使用字母而非中文，它不影响页面上显示的标题)，然后上传到_posts文件夹，commit，很快就可以在博客上看到新文章了。
 
-*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
+### 可选：图片怎么办？
 
-### Layouts
+少量图片可以上传到images文件夹，然后在博文中添加。
 
-If you'd like to change the theme's HTML layout:
+但是GitHub用来当做图床有滥用之嫌，如果你的博客以图片为主，建议选择外链图床，例如[sm.ms](https://sm.ms/)就是和很好的选择。
 
-1. [Copy the original template](https://github.com/lorepirri/cayman-blog/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
-2. Create a file called `/_layouts/default.html` in your site
-3. Paste the default layout content copied in the first step
-4. Customize the layout as you'd like
+如果想要寻找更适合自己的图床，敬请Google一下。
 
-### Sass variables
+在博文中添加图片的Markdown语法是：`![图片名](URL)`
 
-If you'd like to change the theme's [Sass variables](https://github.com/lorepirri/cayman-blog/blob/master/_sass/variables.scss), set new values before the `@import` line in your stylesheet:
+### 可选：添加评论区
 
-```scss
-$section-headings-color: #0086b3;
+LOFFER支持Disqus评论，虽然Disqus很丑，但是它是免费的，设置起来又方便，因此大家也就不要嫌弃它。
 
-@import "{{ site.theme }}";
-```
+首先，注册一个[Disqus](https://disqus.com/)账户，我们可以选择这个免费方案：
 
-### Overriding GitHub-generated URLs
+![img](https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/Disqus-plan.png)
 
-Templates often rely on URLs supplied by GitHub such as links to your repository or links to download your project. If you'd like to override one or more default URLs:
+注册成功后，新建一个站点（site），以LOFFER为例设置步骤如下：
 
-1. Look at [the template source](https://github.com/lorepirri/cayman-blog/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
-2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.url`, you'd add the following:
-    ```yml
-    github:
-      zip_url: http://example.com/download.zip
-      another_url: another value
-    ```
-3. When your site is built, Jekyll will use the URL you specified, rather than the default one provided by GitHub.
+首先站点名LOFFER，生成了shortname是loffer，类型可以随便选。
 
-*Note: You must remove the `site.` prefix, and each variable name (after the `github.`) should be indent with two space below `github:`.*
+![img](https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/Disqus-1.png)
 
-For more information, see [the Jekyll variables documentation](https://jekyllrb.com/docs/variables/).
+安装时选择Jekyll。
 
-## Roadmap
+![img](https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/Disqus-2.png)
 
-See the [open issues](https://github.com/lorepirri/cayman-blog/issues) for a list of proposed features (and known issues).
+最后填入你的博客地址，语言可以选中文，点Complete，即可！
 
-## Project philosophy
+![img](https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/Disqus-3.png)
 
-The Cayman Blog theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
+然后需要回到你的博客，修改_config.yml文件，在disqus字段填上你的shortname，commit，完成！
 
-## Contributing
+### 导入LOFTER的内容
 
-Interested in contributing to Cayman Blog? We'd love your help. Cayman Blog is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
+这部分由于LOFTER的导出文件十分~~优秀~~，需要另外解决。
 
-### Previewing the theme locally
+诸位可以使用[墨问非名太太的脚本](http://underdream.lofter.com/post/38ea7d_1c5d8a983)，其中选择Jekyll输出即可。
 
-If you'd like to preview the theme locally (for example, in the process of proposing a change):
+我个人也在折腾一个脚本，目前还没有完全debug清楚，不管如何，请先在lofter里导出一下，存在本地也是好的，贴吧可以让2017以前所有内容全部消失，中国互联网，没什么不可能发生的。
 
-1. Clone down the theme's repository (`git clone https://github.com/lorepirri/cayman-blog`)
-2. `cd` into the theme's directory
-3. Run `script/bootstrap` to install the necessary dependencies
-4. Run `bundle exec jekyll serve` to start the preview server
-5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
+## 致谢
 
-### Running tests
+* [Jekyll](https://github.com/jekyll/jekyll) - 这是本站存在的根基
+* [Kiko-now](<https://github.com/aweekj/kiko-now>) - 我首先是fork这个主题，然后再其上进行修改汉化，才有了LOFFER
+* [Font Awesome](<https://fontawesome.com/>) - 社交网络图标来自FontAwesome的免费开源内容
 
-The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` once before the test script will work.
+
+
+## 帮助这个项目
+
+介绍更多人来使用它，摆脱lofter自由飞翔！
+
+当然如果单说写同人的话，我还是建议大家都去AO3，但是自家博客自己架也很酷炫，你还可以选择很多其他的forkable Jeykll主题，GitHub上有很多，或者试试其他博客架设工具，例如Hexo，与代码斗其乐无穷。
+
+最后，回到[LOFFER](https://github.com/FromEndWorld/LOFFER)，给我点一个☆吧！
+
+![img](https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/givemefive.png)
