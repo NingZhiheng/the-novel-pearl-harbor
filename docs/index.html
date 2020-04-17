@@ -2,12 +2,16 @@
 layout: default
 ---
 
+{% include 00_about.md %}
+
 {% if site.posts.size == 0 %}
-  <h2>No post found</h2>
+  <h2>章节不存在</h2>
+{% else %}
+  <h2>最近章节</h2>
 {% endif %}
 
 <div class="posts">
-  {% for post in paginator.posts reversed %}
+  {% for post in paginator.posts %}
     <article class="post">
       <h1>
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
