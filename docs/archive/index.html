@@ -9,7 +9,7 @@ permalink: /archive/
 {% endif %}
 
 <ul class="archive">
-  {% for post in site.posts reversed%}
+  {% for post in site.posts reversed %}
     {% if post.prev %}
       {% capture pyear %}{{ post.prev.date | date: '%Y' }}{% endcapture %}
       {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
