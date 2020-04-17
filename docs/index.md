@@ -21,7 +21,7 @@ layout: home
 
 <div class="posts">
   {% for post in paginator.posts %}
-    <article class="post">
+    <div class="post">
       <h3>
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
       </h3>
@@ -47,7 +47,7 @@ layout: home
       </div> -->
 
       <!-- <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a> -->
-    </article>
+    </div>
   {% endfor %}
 </div>
 
