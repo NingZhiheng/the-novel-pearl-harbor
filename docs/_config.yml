@@ -1,32 +1,46 @@
 title: 《谍影风云·珍珠港事件》
 description: 本书系《谍影风云》之同人续作，主要内容是「关东军特种演习」和「珍珠港事件」两个主线内容。此外，还会将主角脱甲这条线串联在连个主线内容当中。
-show_downloads: false
-
-baseurl: "/the-novel-pearl-harbor" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url: "https://ningzhiheng.github.io" # change this to the base hostname & protocol for your site
-
-
+author: Jiaqi Yang
+github: https://github.com/NingZhiheng
+about:
+disqus_shortname:
 google_analytics:
 
-# cayman-blog date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-cayman-blog:
-  date_format: "%b %-d, %Y"
+enableTags: true
+tagarray: []
 
-theme: # leave it empty
+collections:
+  project:
+    output: false
+    permalink: /project/:path/
 
-# social
-author: Jiaqi Yang
-image: /thumbnail-jumbo.png
-twitter:
-  username:
+social:
+    - icon: fa-github
+      link: "https://github.com/NingZhiheng"
 
-plugins:
-  - jekyll-target-blank
+share:
+  twitter_username:
+  fb_appid:
 
-target-blank:
-    rel: nofollow
+urls:
+    - text: 关于
+      url: /about/
+    - text: XML Feed
+      url: /feed.xml
 
-header_page_refs: ['about']
-
+url: "https://ningzhiheng.github.io"
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/page/:num/"
 markdown: kramdown
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: ['development']

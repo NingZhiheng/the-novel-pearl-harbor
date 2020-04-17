@@ -1,10 +1,7 @@
 ---
 layout: page
 title: 关于
-tagline:
-permalink: /about.html
-ref: about
-order: 0
+permalink: /about/
 ---
 
-{% include 00_about.md %}
+{% includes 00_about.md %}
