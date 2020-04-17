@@ -26,6 +26,8 @@ navigation:
     url: /
   - name: 关于
     url: /about
+  - name: 章节列表
+    url: /archive
 
 # 每页的文章数
 paginate: 8
