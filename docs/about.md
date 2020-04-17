@@ -7,4 +7,4 @@ ref: about
 order: 0
 ---
 
-{% include_relative about-internal.md %}
+{% include_relative _about.md %}
