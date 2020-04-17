@@ -61,7 +61,7 @@ layout: home
   {% endif %}
   {% if paginator.next_page %}
     <span class="next">
-      <a href="{{ site.baseurl}}{{ paginator.next_page_path }}" class="next">
+      <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next">
         下一页 →
       </a>
     </span>
