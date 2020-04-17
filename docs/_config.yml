@@ -24,9 +24,9 @@ favicon:
 navigation:
   - name: 首页
     url: /
-  - name: 关于
-    url: /about
-  - name: 章节列表
+  - name: 下载全文
+    url: /download
+  - name: 在线阅读
     url: /archive
 
 # 每页的文章数
