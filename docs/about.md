@@ -7,4 +7,4 @@ ref: about
 order: 0
 ---
 
-{% include_relative _about.md %}
+{% include_relative _posts/00_about.md %}
