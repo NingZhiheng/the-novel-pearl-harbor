@@ -10,12 +10,12 @@ permalink: /archive/
 
 <ul class="archive">
   {% for post in site.posts reversed%}
-    <h2>{{ post.date | date: '%Y' }}</h2>
-    {% unless post.next %}
+    {% unless post.prev %}
+      <h2>{{ post.date | date: '%Y' }}</h2>
     {% else %}
       {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-      {% if year != nyear %}
+      {% capture pyear %}{{ post.prev.date | date: '%Y' }}{% endcapture %}
+      {% if year != pyear %}
         <h2>{{ post.date | date: '%Y' }}</h2>
       {% endif %}
     {% endunless %}
