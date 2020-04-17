@@ -2,16 +2,9 @@
 layout: default
 ---
 
-{% include 00_about.md %}
-
-<hr>
-
-离线下载：
-
-* 适用于在电脑等大屏设备上阅读的 [`main.a4paper.pdf`](/uploads/main.a4paper.pdf) ；
-* 适用于在手机等小屏设备上阅读的 [`main.a6paper.pdf`](/uploads/main.a6paper.pdf)。
-
-<hr>
+<div class="entry">
+  {{ content }}
+</div>
 
 {% if site.posts.size == 0 %}
   <h2>章节不存在</h2>
@@ -22,9 +15,9 @@ layout: default
 <div class="posts">
   {% for post in paginator.posts %}
     <article class="post">
-      <h1>
+      <h3>
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </h1>
+      </h3>
 
       <div clsss="meta">
         <span class="date">
