@@ -20,7 +20,7 @@ layout: home
 {% endif %}
 
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <div class="post">
       <h3>
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
@@ -61,7 +61,7 @@ layout: home
   {% endif %}
   {% if paginator.next_page %}
     <span class="next">
-      <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next">
+      <a href="{{ site.baseurl}}{{ paginator.next_page_path }}" class="next">
         下一页 →
       </a>
     </span>
