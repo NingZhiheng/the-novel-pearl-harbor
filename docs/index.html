@@ -7,7 +7,7 @@ layout: default
 {% endif %}
 
 <div class="posts">
-  {% for post in paginator.posts %}
+  {% for post in paginator.posts reversed %}
     <article class="post">
       <h1>
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
@@ -18,7 +18,7 @@ layout: default
           {{ post.date | date: "%Y-%m-%d" }}
         </span>
 
-        <ul class="tag">
+        <!-- <ul class="tag">
           {% for tag in post.tags %}
           <li>
             <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
@@ -26,14 +26,14 @@ layout: default
             </a>
           </li>
           {% endfor %}
-        </ul>
+        </ul> -->
       </div>
 
-      <div class="entry">
+      <!-- <div class="entry">
         {{ post.excerpt | truncate: 200 }}
-      </div>
+      </div> -->
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <!-- <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a> -->
     </article>
   {% endfor %}
 </div>
