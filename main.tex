@@ -3,17 +3,19 @@
 \afpapertrue
 \usepackage{hyperref}
 \usepackage{graphicx}
+\graphicspath{{docs/_posts/_dummy/_dummy/_dummy/}}
 \usepackage{geometry}
 \ifafpaper
   \geometry{a4paper, scale = 0.62}
   \setlength{\parskip}{1ex}
 \else
   \geometry{a6paper, scale = 0.75}
-  \setlength{\parskip}{.5ex}
+  \setlength{\parskip}{1.5ex}
+  \setlength{\parindent}{0pt}
 \fi
 \usepackage{markdown}
 \markdownSetup{
-  inlineFootnotes = true,
+  footnotes = true,
   renderers = {
     link = {\href{#2}{#1}},
     image = {\begin{figure}[htb]
@@ -24,7 +26,8 @@
       \fi
     \end{figure}},
   },
-  hybrid = true
+  hybrid = true,
+  html = true
 }
 
 \newcommand\nonumsection{\setcounter{secnumdepth}{-2}}
@@ -38,7 +41,10 @@
 \maketitle
 \tableofcontents
 \nonumsection
-\markdownInput{chapter00.md}
+\markdownInput{docs/_includes/00_about.md}
+\markdownInput{docs/_includes/00_introduction.md}
 \numsection
-\markdownInput{chapter01.md}
+\markdownInput{docs/_includes/01.md}
+\markdownInput{docs/_includes/02.md}
+\markdownInput{docs/_includes/03.md}
 \end{document}
