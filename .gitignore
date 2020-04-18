@@ -278,6 +278,7 @@ TSWLatexianTemp*
 # markdown package
 _markdown*
 *.markdown.lua
+*.markdown.*
 
 # output
 /*.pdf
