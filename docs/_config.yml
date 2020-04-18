@@ -51,7 +51,7 @@ footer-links:
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # 站点页脚的文字
-license-text: LICENSED by CC-BY-SA-4.0
+license-text: LICENSED by <a href="https://ningzhiheng.github.io/the-novel-pearl-harbor/license/" title="CC-BY-SA-4.0">CC-BY-SA-4.0</a>
 footer-text: Jiaqi Yang
 
 # 输入Disqus shortname，即可添加评论区，细节可阅读文档。
