@@ -1,10 +1,23 @@
-\documentclass[UTF8, size = -4]{ctexart}
+\documentclass[UTF8, size = -4, fontset = founder]{ctexart}
+\usepackage{expl3}
+\ExplSyntaxOn
+\str_const:Nn \c_liam_uptex_str { uptex }
+\str_if_eq:NNTF { \c_liam_uptex_str } { \c_sys_engine_str }
+  {
+    \usepackage[dvipdfmx]{graphicx}
+    \usepackage{bmpsize}
+    \usepackage{geometry}
+    \usepackage[dvipdfmx]{hyperref}
+  }
+  {
+    \usepackage{graphicx}
+    \usepackage{geometry}
+    \usepackage{hyperref}
+  }
+\ExplSyntaxOff
 \newif\ifafpaper
 \afpapertrue
-\usepackage{hyperref}
-\usepackage{graphicx}
 \graphicspath{{docs/_posts/_dummy/_dummy/_dummy/}}
-\usepackage{geometry}
 % \geometry{showframe}
 \ifafpaper
   \geometry{a4paper, scale = 0.62}
@@ -31,8 +44,8 @@
   html = true
 }
 
-\newcommand\nonumsection{\setcounter{secnumdepth}{-2}}
-\newcommand\numsection{\setcounter{secnumdepth}{3}}
+\newcommand\nonumsection{\ctexset{section/numbering = false}}
+\newcommand\numsection{\ctexset{section/numbering = true}}
 
 \title{谍影风云·珍珠港事件\thanks{发布地址：\url{https://ningzhiheng.github.io/the-novel-pearl-harbor/}}}
 \author{杨葭七}
