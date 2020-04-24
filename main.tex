@@ -2,7 +2,7 @@
 \usepackage{expl3}
 \ExplSyntaxOn
 \str_const:Nn \c_liam_uptex_str { uptex }
-\str_if_eq:nNTF { uptex } { \c_sys_engine_str }
+\str_if_eq:NNTF { \c_liam_uptex_str } { \c_sys_engine_str }
   {
     \usepackage [ dvipdfmx ] { graphicx }
     \usepackage { bmpsize }
